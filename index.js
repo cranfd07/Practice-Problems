@@ -74,6 +74,16 @@ console.log('Hello');
   console.log(alphanumeric("PassW0rd"));
   console.log(alphanumeric("       "));*/
 
-  
 
-  
+
+
+
+//   function domainName(url){
+//     return new URL(url).hostname;
+//   }
+
+//   console.log(domainName("http://google.com"));
+//   console.log(domainName("http://google.co.jp"));
+//   console.log(domainName("www.xakep.ru"));
+//   console.log(domainName("https://youtube.com"));
+
