@@ -87,3 +87,37 @@ console.log('Hello');
 //   console.log(domainName("www.xakep.ru"));
 //   console.log(domainName("https://youtube.com"));
 
+// function firstNonRepeatingLetter(s) {
+//     //create an object 
+//     const obj = {};
+//     //for loop
+//     for (let i = 0; i < s.length; i++) { 
+//     //make each el a key on the object 
+//     if (s[i].toLowerCase() in obj) {
+//         obj[s[i].toLowerCase()] = obj[s[i].toLowerCase()] + 1;
+//     } else {
+//         obj[s[i].toLowerCase()] = 1;
+//     }
+//     //value would be the number of times that el is repeated in the input string 
+//     }
+//     console.log(obj)
+//     //for in loop 
+//     for (const value in obj) {
+//         if (obj[value] === 1) {
+//             for (let i = 0; i < s.length; i++) {
+//                 if (value === s[i]) {
+//                     return s[i];
+//                 } 
+//                 if (value.toUpperCase() === s[i]) {
+//                     return s[i]
+//                 }
+//             }
+//         }
+//     }
+//     //whichever value is === 1 then return that key
+//     return ''; 
+//   }
+
+//   console.log(firstNonRepeatingLetter('a'));
+//   console.log(firstNonRepeatingLetter('stress'));
+//   console.log(firstNonRepeatingLetter('moonmEn'));
