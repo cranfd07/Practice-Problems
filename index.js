@@ -111,7 +111,7 @@ console.log('Hello');
 //                 if (value.toUpperCase() === s[i]) {
 //                     return s[i]
 //                 }
-//             }
+//             }0
 //         }
 //     }
 //     //whichever value is === 1 then return that key
