@@ -121,3 +121,25 @@ console.log('Hello');
 //   console.log(firstNonRepeatingLetter('a'));
 //   console.log(firstNonRepeatingLetter('stress'));
 //   console.log(firstNonRepeatingLetter('moonmEn'));
+
+
+
+
+function add(n){
+    //create a sumAll variable 
+    console.log(n)
+    let sumAll = 0;
+    //return a function pass args as the parameter with the spread operator 
+    return function(...args) {
+        sumAll += n;
+        sumAll += args;
+        return sumAll;
+    }
+
+  }
+
+//   console.log(add(1)(2));
+//   console.log(add(1)(2)(3));
+  console.log(add(1)(2)(3)(4));
+ 
+  
