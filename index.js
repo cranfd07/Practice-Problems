@@ -144,6 +144,7 @@ console.log('Hello');
  
 function maskify(cc) {
 let newString ='';
+if (cc[0] === undefined) return '';
 for (let i = 0; i < cc.length; i++) {
     if ([i] < cc.length - 4) {
         newString += '#';
@@ -153,6 +154,7 @@ for (let i = 0; i < cc.length; i++) {
 }
 return newString;
 }
-console.log(maskify('45563646079356160000'));
-console.log(maskify('1'));
-console.log(maskify('111111'));
+// console.log(maskify('45563646079356160000'));
+// console.log(maskify('1'));
+// console.log(maskify('111111'));
+console.log(maskify(''))
