@@ -163,11 +163,15 @@ function solution(str) {
     //create an empty array 
     console.log(str.slice(1), str.slice(1))
     const newArray = [];
+    let counterOne = 0;
+    let counterTwo = 1;
     //for loop over the input string 
     for (let i = 0; i < str.length; i++) {
-        newArray.push(str[i])
-    }
+        newArray.push('str[counterOne], str[counterTwo]')
     //return empty array
+    counterOne + 2;
+    counterTwo + 2;
+    }
     return newArray;
    
 }
