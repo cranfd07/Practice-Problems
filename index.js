@@ -142,19 +142,35 @@ console.log('Hello');
 // //   console.log(add(1)(2)(3));
 //   console.log(add(1)(2)(3)(4));
  
-function maskify(cc) {
-let newString ='';
-if (cc[0] === undefined) return '';
-for (let i = 0; i < cc.length; i++) {
-    if ([i] < cc.length - 4) {
-        newString += '#';
-    } else {
-        newString += cc[i];
+// function maskify(cc) {
+// let newString ='';
+// if (cc[0] === undefined) return '';
+// for (let i = 0; i < cc.length; i++) {
+//     if ([i] < cc.length - 4) {
+//         newString += '#';
+//     } else {
+//         newString += cc[i];
+//     }
+// }
+// return newString;
+// }
+// // console.log(maskify('45563646079356160000'));
+// // console.log(maskify('1'));
+// // console.log(maskify('111111'));
+// console.log(maskify(''))
+
+function solution(str) {
+    //create an empty array 
+    console.log(str.slice(1), str.slice(1))
+    const newArray = [];
+    //for loop over the input string 
+    for (let i = 0; i < str.length; i++) {
+        newArray.push(str[i])
     }
+    //return empty array
+    return newArray;
+   
 }
-return newString;
-}
-// console.log(maskify('45563646079356160000'));
-// console.log(maskify('1'));
-// console.log(maskify('111111'));
-console.log(maskify(''))
+
+console.log(solution('abcdef'));
+console.log(solution('abcdefg'));
