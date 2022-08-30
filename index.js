@@ -125,21 +125,34 @@ console.log('Hello');
 
 
 
-function add(n){
-    //create a sumAll variable 
-    console.log(n)
-    let sumAll = 0;
-    //return a function pass args as the parameter with the spread operator 
-    return function(...args) {
-        sumAll += n;
-        sumAll += args;
-        return sumAll;
-    }
+// function add(n){
+//     //create a sumAll variable 
+//     console.log(n)
+//     let sumAll = 0;
+//     //return a function pass args as the parameter with the spread operator 
+//     return function(...args) {
+//         sumAll += n;
+//         sumAll += args;
+//         return sumAll;
+//     }
 
-  }
+//   }
 
-//   console.log(add(1)(2));
-//   console.log(add(1)(2)(3));
-  console.log(add(1)(2)(3)(4));
+// //   console.log(add(1)(2));
+// //   console.log(add(1)(2)(3));
+//   console.log(add(1)(2)(3)(4));
  
-  
+function maskify(cc) {
+let newString ='';
+for (let i = 0; i < cc.length; i++) {
+    if ([i] < cc.length - 4) {
+        newString += '#';
+    } else {
+        newString += cc[i];
+    }
+}
+return newString;
+}
+console.log(maskify('45563646079356160000'));
+console.log(maskify('1'));
+console.log(maskify('111111'));
