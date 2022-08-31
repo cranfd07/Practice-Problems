@@ -178,3 +178,4 @@ function solution(str) {
 
 console.log(solution('abcdef'));
 console.log(solution('abcdefg'));
+console.log(solution('abcdefg'));
