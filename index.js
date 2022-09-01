@@ -159,23 +159,36 @@ console.log('Hello');
 // // console.log(maskify('111111'));
 // console.log(maskify(''))
 
-function solution(str) {
-    //create an empty array 
-    console.log(str.slice(1), str.slice(1))
-    const newArray = [];
-    let counterOne = 0;
-    let counterTwo = 1;
-    //for loop over the input string 
-    for (let i = 0; i < str.length; i++) {
-        newArray.push('str[counterOne], str[counterTwo]')
-    //return empty array
-    counterOne + 2;
-    counterTwo + 2;
-    }
-    return newArray;
+// function solution(str) {
+//     //create an empty array 
+//     console.log(str.slice(1), str.slice(1))
+//     const newArray = [];
+//     let counterOne = 0;
+//     let counterTwo = 1;
+//     //for loop over the input string 
+//     for (let i = 0; i < str.length; i++) {
+//         newArray.push('str[counterOne], str[counterTwo]')
+//     //return empty array
+//     counterOne + 2;
+//     counterTwo + 2;
+//     }
+//     return newArray;
    
-}
+// }
 
-console.log(solution('abcdef'));
-console.log(solution('abcdefg'));
-console.log(solution('abcdefg'));
+// console.log(solution('abcdef'));
+// console.log(solution('abcdefg'));
+// console.log(solution('abcdefg'));
+
+var searchInsert = function(nums, target) {
+    for (let i = 0; i < nums.length; i++) {
+        if (nums[i] === target) {
+            return i;
+        }
+    }
+    
+};
+
+console.log(searchInsert([1,3,5,6], 5));
+console.log(searchInsert([1,3,5,6], 2));
+console.log(searchInsert([1,3,5,6]), 7);
