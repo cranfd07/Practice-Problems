@@ -180,15 +180,33 @@ console.log('Hello');
 // console.log(solution('abcdefg'));
 // console.log(solution('abcdefg'));
 
-var searchInsert = function(nums, target) {
-    for (let i = 0; i < nums.length; i++) {
-        if (nums[i] === target) {
-            return i;
-        }
-    }
+// var searchInsert = function(nums, target) {
+//     for (let i = 0; i < nums.length; i++) {
+//         if (nums[i] === target) {
+//             return i;
+//         }
+//     }
     
+// };
+
+// console.log(searchInsert([1,3,5,6], 5));
+// console.log(searchInsert([1,3,5,6], 2));
+// console.log(searchInsert([1,3,5,6]), 7);
+
+var pivotIndex = function(nums) {
+    //create a leftSumValue 
+    //create a rightSumValue
+    //create a counter variable = 1
+    //for loop over the input nums 
+    //leftSumValue =+ nums[i];
+    //if (leftSumValue === rightSumValue) return nums[i + 1]
+    //rightSumValue =+ nums[nums.length - counter] 
+    //counter++;
+    //if (leftSumValue === rightSumValue) return nums[i + 1]
+    //outside of loop
+    //return -1;
+
 };
 
-console.log(searchInsert([1,3,5,6], 5));
-console.log(searchInsert([1,3,5,6], 2));
-console.log(searchInsert([1,3,5,6]), 7);
+console.log(pivotIndex([1,7,3,6,5,6]));
+console.log(pivotIndex([1,2,3,]));
