@@ -195,18 +195,29 @@ console.log('Hello');
 
 var pivotIndex = function(nums) {
     //create a leftSumValue 
+    let leftSumValue = 0;
     //create a rightSumValue
+    let rightSumValue = 0;
     //create a counter variable = 1
+    let counter = 1;
     //for loop over the input nums 
+    for (let i = 0; i < nums.length; i++) {
     //leftSumValue =+ nums[i];
+    leftSumValue += nums[i];
     //if (leftSumValue === rightSumValue) return nums[i + 1]
+    if (leftSumValue === rightSumValue) return (i + 1);
     //rightSumValue =+ nums[nums.length - counter] 
+    rightSumValue += nums[nums.length - counter];
     //counter++;
+    counter++;
     //if (leftSumValue === rightSumValue) return nums[i + 1]
+    if (leftSumValue === rightSumValue) return (i + 1);
+    if(i > counter) return -1;
+    }
     //outside of loop
     //return -1;
-
 };
 
+// debugger;
 console.log(pivotIndex([1,7,3,6,5,6]));
 console.log(pivotIndex([1,2,3,]));
