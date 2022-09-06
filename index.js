@@ -212,12 +212,12 @@ var pivotIndex = function(nums) {
     counter++;
     //if (leftSumValue === rightSumValue) return nums[i + 1]
     if (leftSumValue === rightSumValue) return (i + 1);
-    if(i === counter) return -1;
+    if(nums[i] === undefined) return -1;
     }
     //outside of loop
     //return -1;
 };
 
-debugger;
+// debugger;
 // console.log(pivotIndex([1,7,3,6,5,6]));
 console.log(pivotIndex([1,2,3,]));
