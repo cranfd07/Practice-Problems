@@ -193,31 +193,56 @@ console.log('Hello');
 // console.log(searchInsert([1,3,5,6], 2));
 // console.log(searchInsert([1,3,5,6]), 7);
 
-var pivotIndex = function(nums) {
-    //create a leftSumValue 
-    let leftSumValue = 0;
-    //create a rightSumValue
-    let rightSumValue = 0;
-    //create a counter variable = 1
-    let counter = 1;
-    //for loop over the input nums 
-    for (let i = 0; i < nums.length; i++) {
-    //leftSumValue =+ nums[i];
-    leftSumValue += nums[i];
-    //if (leftSumValue === rightSumValue) return nums[i + 1]
-    if (leftSumValue === rightSumValue) return (i + 1);
-    //rightSumValue =+ nums[nums.length - counter] 
-    rightSumValue += nums[nums.length - counter];
-    //counter++;
-    counter++;
-    //if (leftSumValue === rightSumValue) return nums[i + 1]
-    if (leftSumValue === rightSumValue) return (i + 1);
-    if(nums[i] === undefined) return -1;
-    }
-    //outside of loop
-    //return -1;
-};
+// var pivotIndex = function(nums) {
+//     //create a leftSumValue 
+//     let leftSumValue = 0;
+//     //create a rightSumValue
+//     let rightSumValue = 0;
+//     //create a counter variable = 1
+//     let counter = 1;
+//     //for loop over the input nums 
+//     for (let i = 0; i < nums.length; i++) {
+//     //leftSumValue =+ nums[i];
+//     leftSumValue += nums[i];
+//     //if (leftSumValue === rightSumValue) return nums[i + 1]
+//     if (leftSumValue === rightSumValue) return (i + 1);
+//     //rightSumValue =+ nums[nums.length - counter] 
+//     rightSumValue += nums[nums.length - counter];
+//     //counter++;
+//     counter++;
+//     //if (leftSumValue === rightSumValue) return nums[i + 1]
+//     if (leftSumValue === rightSumValue) return (i + 1);
+//     if(nums[i] === undefined) return -1;
+//     }
+//     //outside of loop
+//     //return -1;
+// };
 
-// debugger;
-// console.log(pivotIndex([1,7,3,6,5,6]));
-console.log(pivotIndex([1,2,3,]));
+// // debugger;
+// // console.log(pivotIndex([1,7,3,6,5,6]));
+// console.log(pivotIndex([1,2,3,]));
+
+// var runningSum = function(nums) {
+//   let newSum = 0;
+//   const newArr = [];
+//   for (let i = 0; i < nums.length; i++) {
+//       newSum += nums[i];
+//       newArr.push(newSum);
+//   }
+//   return newArr;
+// };
+
+// console.log(runningSum([1,2,3,4]))
+
+var pivotIndex = function(nums) {
+  let totalSum = 0; 
+let leftSum = 0; 
+nums.forEach((element) => totalSum += element);
+for(let e=0; e<nums.length; e++){
+ if(totalSum - leftSum - nums[e] === leftSum){
+    return e;
+ }
+ leftSum += nums[e]
+}
+return -1;  
+};
