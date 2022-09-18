@@ -240,25 +240,64 @@ console.log("Hello");
 // return -1;
 // };
 
-var isIsomorphic = function (s, t) {
-  //conditional if the lengths of both s and t are not equal return false
-  if (s.length !== t.length) return false;
-  //create an object
-  const obj = {};
-  //s t string values in object will be keys
+// var isIsomorphic = function (s, t) {
+//   //conditional if the lengths of both s and t are not equal return false
+//   if (s.length !== t.length) return false;
+
+//   const mapa = new Map();
+//   const mapb = new Map();
+
+//   for (let i = 0; i < s.length; i++) {
+//     if (mapa.has(s[i])) {
+//       if (mapa.get(s[i]) !== t[i]) {
+//         return false;
+//       }
+//     } else {
+//       mapa.set(s[i], t[i]);
+//     }
+
+//     if (mapb.has(t[i])) {
+//       if (mapb.get(t[i]) !== s[i]) {
+//         return false;
+//       }
+//     } else {
+//       mapb.set(t[i], s[i]);
+//     }
+//   }
+//   console.log(mapa);
+//   return true;
+// };
+
+// console.log(isIsomorphic("egg", "add"));
+// console.log(isIsomorphic("foo", "bar"));
+// console.log(isIsomorphic("paper", "title"));
+
+var isSubsequence = function (s, t) {
+  //create a new a s variable
+  let newVar = "";
+  //for loop over the s input
   for (let i = 0; i < s.length; i++) {
-    if (s[i] in obj) {
-      obj[s[i]] = obj[s[i]] + 1;
-    } else {
-      obj[s[i]] = 1;
+    let newS = s[i];
+    //for loop over the t input string
+    for (let j = 0; j < t.length; j++) {
+      //conditional: if s === t then push that
+      if (newS === t[j]) {
+        newVar += t[j];
+        console.log(newVar);
+      }
     }
   }
-  // initial values in object will be 1
-  //if values are equal to 2 then return false
-  //else return true
-  console.log(obj);
+  //outside the for loop
+  //conditonal if new sVar is === input s string return false
+  console.log(newVar);
+  if (s === newVar) {
+    return true;
+  } else {
+    return false;
+  }
+  //else: return false
 };
 
-console.log(isIsomorphic("egg", "add"));
-console.log(isIsomorphic("foo", "bar"));
-console.log(isIsomorphic("paper", "title"));
+// console.log(isSubsequence("abc", "ahbgdc"));
+// console.log(isSubsequence("axc", "ahbgdc"));
+console.log(isSubsequence("acb", "ahbgdc"));
