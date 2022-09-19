@@ -274,6 +274,7 @@ console.log("Hello");
 
 var isSubsequence = function (s, t) {
   //create a new a s variable
+  console.log(s.length);
   let newVar = "";
   //for loop over the s input
   for (let i = 0; i < s.length; i++) {
