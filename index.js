@@ -1,4 +1,4 @@
-console.log('Hello');
+console.log("Hello");
 
 /*function descendingOrder(n){
     //create newString use the methods - toString - split
@@ -15,7 +15,7 @@ console.log('Hello');
   console.log(descendingOrder(121));
   console.log(descendingOrder(123456789));*/
 
-  /*function alphanumeric(string){
+/*function alphanumeric(string){
     //create an object with all passable values 
     const obj = {
         0: true,
@@ -74,10 +74,6 @@ console.log('Hello');
   console.log(alphanumeric("PassW0rd"));
   console.log(alphanumeric("       "));*/
 
-
-
-
-
 //   function domainName(url){
 //     return new URL(url).hostname;
 //   }
@@ -88,26 +84,26 @@ console.log('Hello');
 //   console.log(domainName("https://youtube.com"));
 
 // function firstNonRepeatingLetter(s) {
-//     //create an object 
+//     //create an object
 //     const obj = {};
 //     //for loop
-//     for (let i = 0; i < s.length; i++) { 
-//     //make each el a key on the object 
+//     for (let i = 0; i < s.length; i++) {
+//     //make each el a key on the object
 //     if (s[i].toLowerCase() in obj) {
 //         obj[s[i].toLowerCase()] = obj[s[i].toLowerCase()] + 1;
 //     } else {
 //         obj[s[i].toLowerCase()] = 1;
 //     }
-//     //value would be the number of times that el is repeated in the input string 
+//     //value would be the number of times that el is repeated in the input string
 //     }
 //     console.log(obj)
-//     //for in loop 
+//     //for in loop
 //     for (const value in obj) {
 //         if (obj[value] === 1) {
 //             for (let i = 0; i < s.length; i++) {
 //                 if (value === s[i]) {
 //                     return s[i];
-//                 } 
+//                 }
 //                 if (value.toUpperCase() === s[i]) {
 //                     return s[i]
 //                 }
@@ -115,21 +111,18 @@ console.log('Hello');
 //         }
 //     }
 //     //whichever value is === 1 then return that key
-//     return ''; 
+//     return '';
 //   }
 
 //   console.log(firstNonRepeatingLetter('a'));
 //   console.log(firstNonRepeatingLetter('stress'));
 //   console.log(firstNonRepeatingLetter('moonmEn'));
 
-
-
-
 // function add(n){
-//     //create a sumAll variable 
+//     //create a sumAll variable
 //     console.log(n)
 //     let sumAll = 0;
-//     //return a function pass args as the parameter with the spread operator 
+//     //return a function pass args as the parameter with the spread operator
 //     return function(...args) {
 //         sumAll += n;
 //         sumAll += args;
@@ -141,7 +134,7 @@ console.log('Hello');
 // //   console.log(add(1)(2));
 // //   console.log(add(1)(2)(3));
 //   console.log(add(1)(2)(3)(4));
- 
+
 // function maskify(cc) {
 // let newString ='';
 // if (cc[0] === undefined) return '';
@@ -160,12 +153,12 @@ console.log('Hello');
 // console.log(maskify(''))
 
 // function solution(str) {
-//     //create an empty array 
+//     //create an empty array
 //     console.log(str.slice(1), str.slice(1))
 //     const newArray = [];
 //     let counterOne = 0;
 //     let counterTwo = 1;
-//     //for loop over the input string 
+//     //for loop over the input string
 //     for (let i = 0; i < str.length; i++) {
 //         newArray.push('str[counterOne], str[counterTwo]')
 //     //return empty array
@@ -173,7 +166,7 @@ console.log('Hello');
 //     counterTwo + 2;
 //     }
 //     return newArray;
-   
+
 // }
 
 // console.log(solution('abcdef'));
@@ -186,7 +179,7 @@ console.log('Hello');
 //             return i;
 //         }
 //     }
-    
+
 // };
 
 // console.log(searchInsert([1,3,5,6], 5));
@@ -194,19 +187,19 @@ console.log('Hello');
 // console.log(searchInsert([1,3,5,6]), 7);
 
 // var pivotIndex = function(nums) {
-//     //create a leftSumValue 
+//     //create a leftSumValue
 //     let leftSumValue = 0;
 //     //create a rightSumValue
 //     let rightSumValue = 0;
 //     //create a counter variable = 1
 //     let counter = 1;
-//     //for loop over the input nums 
+//     //for loop over the input nums
 //     for (let i = 0; i < nums.length; i++) {
 //     //leftSumValue =+ nums[i];
 //     leftSumValue += nums[i];
 //     //if (leftSumValue === rightSumValue) return nums[i + 1]
 //     if (leftSumValue === rightSumValue) return (i + 1);
-//     //rightSumValue =+ nums[nums.length - counter] 
+//     //rightSumValue =+ nums[nums.length - counter]
 //     rightSumValue += nums[nums.length - counter];
 //     //counter++;
 //     counter++;
@@ -235,8 +228,13 @@ console.log('Hello');
 // console.log(runningSum([1,2,3,4]))
 
 // var pivotIndex = function(nums) {
+<<<<<<< HEAD
 //   let totalSum = 0; 
 // let leftSum = 0; 
+=======
+//   let totalSum = 0;
+// let leftSum = 0;
+>>>>>>> 92bb53166810b25b5a1b042d634a3676955e3992
 // nums.forEach((element) => totalSum += element);
 // for(let e=0; e<nums.length; e++){
 //  if(totalSum - leftSum - nums[e] === leftSum){
@@ -244,6 +242,7 @@ console.log('Hello');
 //  }
 //  leftSum += nums[e]
 // }
+<<<<<<< HEAD
 // return -1;  
 // };
 
@@ -258,3 +257,76 @@ function flattenDeep(array) {
 
 console.log(flattenDeep([1, [2, 3, [4]]]));
 
+=======
+// return -1;
+// };
+
+// var isIsomorphic = function (s, t) {
+//   //conditional if the lengths of both s and t are not equal return false
+//   if (s.length !== t.length) return false;
+
+//   const mapa = new Map();
+//   const mapb = new Map();
+
+//   for (let i = 0; i < s.length; i++) {
+//     if (mapa.has(s[i])) {
+//       if (mapa.get(s[i]) !== t[i]) {
+//         return false;
+//       }
+//     } else {
+//       mapa.set(s[i], t[i]);
+//     }
+
+//     if (mapb.has(t[i])) {
+//       if (mapb.get(t[i]) !== s[i]) {
+//         return false;
+//       }
+//     } else {
+//       mapb.set(t[i], s[i]);
+//     }
+//   }
+//   console.log(mapa);
+//   return true;
+// };
+
+// console.log(isIsomorphic("egg", "add"));
+// console.log(isIsomorphic("foo", "bar"));
+// console.log(isIsomorphic("paper", "title"));
+
+var isSubsequence = function (s, t) {
+  //create a new a s variable
+  console.log(s.length);
+  let newVar = "";
+  //for loop over the s input
+  for (let i = 0; i < s.length; i++) {
+    let newS = s[i];
+    //for loop over the t input string
+    for (let j = 0; j < t.length; j++) {
+      //conditional: if s === t then push that
+      if (newS === t[j]) {
+        newVar += t[j];
+        console.log(newVar);
+      }
+    }
+  }
+  //outside the for loop
+  //conditonal if new sVar is === input s string return false
+  console.log(newVar);
+  if (s === newVar) {
+    return true;
+  } else {
+    return false;
+  }
+  //else: return false
+};
+
+// console.log(isSubsequence("abc", "ahbgdc"));
+// console.log(isSubsequence("axc", "ahbgdc"));
+console.log(isSubsequence("acb", "ahbgdc"));
+console.log(isSubsequence("acb", "ahbgdc"));
+console.log(isSubsequence("acb", "ahbgdc"));
+console.log(isSubsequence("acb", "ahbgdc"));
+console.log(isSubsequence("acb", "ahbgdc"));
+console.log(isSubsequence("acb", "ahbgdc"));
+console.log(isSubsequence("acb", "ahbgdc"));
+>>>>>>> 92bb53166810b25b5a1b042d634a3676955e3992
