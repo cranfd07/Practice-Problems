@@ -234,15 +234,27 @@ console.log('Hello');
 
 // console.log(runningSum([1,2,3,4]))
 
-var pivotIndex = function(nums) {
-  let totalSum = 0; 
-let leftSum = 0; 
-nums.forEach((element) => totalSum += element);
-for(let e=0; e<nums.length; e++){
- if(totalSum - leftSum - nums[e] === leftSum){
-    return e;
- }
- leftSum += nums[e]
+// var pivotIndex = function(nums) {
+//   let totalSum = 0; 
+// let leftSum = 0; 
+// nums.forEach((element) => totalSum += element);
+// for(let e=0; e<nums.length; e++){
+//  if(totalSum - leftSum - nums[e] === leftSum){
+//     return e;
+//  }
+//  leftSum += nums[e]
+// }
+// return -1;  
+// };
+
+function flattenDeep(array) {
+  // CODE HERE
+  console.log(array[0])
+  const newArray = array.slice(1);
+  console.log(newArray);
+  console.log(newArray[0]);
 }
-return -1;  
-};
+
+
+console.log(flattenDeep([1, [2, 3, [4]]]));
+
