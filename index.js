@@ -369,9 +369,3 @@ function flattenDeep(array) {
 }
 
 console.log(flattenDeep([1, [2, 3, [4]]]));
-
-const oneTwo = [1,2,4,5,6]
-const oneOne = [];
-oneOne.push(oneTwo.shift())
-console.log(oneOne);
-console.log(oneTwo)
