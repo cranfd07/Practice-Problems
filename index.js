@@ -327,4 +327,16 @@ console.log(isSubsequence("acb", "ahbgdc"));
 console.log(isSubsequence("acb", "ahbgdc"));
 console.log(isSubsequence("acb", "ahbgdc"));
 
+function reduce(array, callback, start) {
+  // CODE HERE
+  console.log(callback)
+  if (!start) {
+    let finalValue = array[0]
+    console.log(finalValue)
+  for (let i = 1; i < array.length; i++) {
+    finalValue += array[i];
+    console.log(finalValue)
+  }
+  return finalValue;
+}
 
