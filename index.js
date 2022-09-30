@@ -340,3 +340,15 @@ function reduce(array, callback, start) {
   return finalValue;
 }
 
+function reduce(array, callback, start) {
+  // CODE HERE
+  let newValue = 0;
+  if (!start) {
+    let finalValue = array[0]
+  for (let i = 1; i < array.length; i++) {
+    console.log(callback(array[i]))
+    finalValue += callback(array[i]);
+  }
+  return finalValue;
+}
+
