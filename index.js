@@ -388,3 +388,21 @@ function flattenDeep(array) {
 }
 
 console.log(flattenDeep([1, [2, 3, [4]]]));
+
+function flattenDeep(array) {
+  let newArr = []; 
+  //if array.length === 0 then return newArr
+  //for loop over the input array 
+  for (let i = 0; i < array.length; i++) {
+  //conditional: if array[0] doesn't equal an array we are going to push/slice it to the newArray 
+  if (Array.isArray(array[i])) {
+    newArr = newArr.concat(flattenDeep(array[i]));
+  } else {
+  //conditional: else return flattenDeep over
+    newArr.push(array[i]);
+  }
+  }
+  return newArr;
+}
+
+console.log(flattenDeep([1, [2, 3, [4]]]));
