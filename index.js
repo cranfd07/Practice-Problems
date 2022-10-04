@@ -352,57 +352,72 @@ console.log("Hello");
 //   return finalValue;
 // }
 
-function flattenDeep(array) {
-  let newArr = []; 
-  //if array.length === 0 then return newArr
+// function flattenDeep(array) {
+//   let newArr = []; 
+//   //if array.length === 0 then return newArr
+//   //for loop over the input array 
+//   for (let i = 0; i < array.length; i++) {
+//   //conditional: if array[0] doesn't equal an array we are going to push/slice it to the newArray 
+//   if (Array.isArray(array[i])) {
+//     newArr = newArr.concat(flattenDeep(array[i]));
+//   } else {
+//   //conditional: else return flattenDeep over
+//     newArr.push(array[i]);
+//   }
+//   }
+//   return newArr;
+// }
+
+// console.log(flattenDeep([1, [2, 3, [4]]]));
+
+
+// function flattenDeep(array) {
+//   let newArr = []; 
+//   //if array.length === 0 then return newArr
+//   //for loop over the input array 
+//   for (let i = 0; i < array.length; i++) {
+//   //conditional: if array[0] doesn't equal an array we are going to push/slice it to the newArray 
+//   if (Array.isArray(array[i])) {
+//     newArr = newArr.concat(flattenDeep(array[i]));
+//   } else {
+//   //conditional: else return flattenDeep over
+//     newArr.push(array[i]);
+//   }
+//   }
+//   return newArr;
+// }
+
+// console.log(flattenDeep([1, [2, 3, [4]]]));
+
+// function flattenDeep(array) {
+//   let newArr = []; 
+//   //if array.length === 0 then return newArr
+//   //for loop over the input array 
+//   for (let i = 0; i < array.length; i++) {
+//   //conditional: if array[0] doesn't equal an array we are going to push/slice it to the newArray 
+//   if (Array.isArray(array[i])) {
+//     newArr = newArr.concat(flattenDeep(array[i]));
+//   } else {
+//   //conditional: else return flattenDeep over
+//     newArr.push(array[i]);
+//   }
+//   }
+//   return newArr;
+// }
+
+// console.log(flattenDeep([1, [2, 3, [4]]]));
+
+var runningSum = function(nums) {
+  //create a newSum array 
+  let sumArray = [];
+  let updatedSum = 0;
   //for loop over the input array 
-  for (let i = 0; i < array.length; i++) {
-  //conditional: if array[0] doesn't equal an array we are going to push/slice it to the newArray 
-  if (Array.isArray(array[i])) {
-    newArr = newArr.concat(flattenDeep(array[i]));
-  } else {
-  //conditional: else return flattenDeep over
-    newArr.push(array[i]);
+  for (let i = 0; i < nums.length; i++) {
+  //updatedSum += nums[i]
+    updatedSum += nums[i];
+  //sumArray.push(updatedSum0)
+  sumArray.push(updatedSum);
   }
-  }
-  return newArr;
-}
-
-console.log(flattenDeep([1, [2, 3, [4]]]));
-
-
-function flattenDeep(array) {
-  let newArr = []; 
-  //if array.length === 0 then return newArr
-  //for loop over the input array 
-  for (let i = 0; i < array.length; i++) {
-  //conditional: if array[0] doesn't equal an array we are going to push/slice it to the newArray 
-  if (Array.isArray(array[i])) {
-    newArr = newArr.concat(flattenDeep(array[i]));
-  } else {
-  //conditional: else return flattenDeep over
-    newArr.push(array[i]);
-  }
-  }
-  return newArr;
-}
-
-console.log(flattenDeep([1, [2, 3, [4]]]));
-
-function flattenDeep(array) {
-  let newArr = []; 
-  //if array.length === 0 then return newArr
-  //for loop over the input array 
-  for (let i = 0; i < array.length; i++) {
-  //conditional: if array[0] doesn't equal an array we are going to push/slice it to the newArray 
-  if (Array.isArray(array[i])) {
-    newArr = newArr.concat(flattenDeep(array[i]));
-  } else {
-  //conditional: else return flattenDeep over
-    newArr.push(array[i]);
-  }
-  }
-  return newArr;
-}
-
-console.log(flattenDeep([1, [2, 3, [4]]]));
+    return sumArray;
+};
+console.log(runningSum([1,2,3,4]))
