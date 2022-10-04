@@ -407,17 +407,24 @@ console.log("Hello");
 
 // console.log(flattenDeep([1, [2, 3, [4]]]));
 
-var runningSum = function(nums) {
-  //create a newSum array 
-  let sumArray = [];
-  let updatedSum = 0;
-  //for loop over the input array 
-  for (let i = 0; i < nums.length; i++) {
-  //updatedSum += nums[i]
-    updatedSum += nums[i];
-  //sumArray.push(updatedSum0)
-  sumArray.push(updatedSum);
-  }
-    return sumArray;
+// var runningSum = function(nums) {
+//   //create a newSum array 
+//   let sumArray = [];
+//   let updatedSum = 0;
+//   //for loop over the input array 
+//   for (let i = 0; i < nums.length; i++) {
+//   //updatedSum += nums[i]
+//     updatedSum += nums[i];
+//   //sumArray.push(updatedSum0)
+//   sumArray.push(updatedSum);
+//   }
+//     return sumArray;
+// };
+// console.log(runningSum([1,2,3,4]))
+
+var pivotIndex = function(nums) {
+    
 };
-console.log(runningSum([1,2,3,4]))
+
+console.log(pivotIndex([1,7,3,6,5,6]))
+console.log(pivotIndex([1,7,3,6,5,6]))
