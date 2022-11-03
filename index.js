@@ -228,15 +228,35 @@ console.log("Hello");
 // console.log(runningSum([1,2,3,4]))
 
 // var pivotIndex = function(nums) {
-//   let totalSum = 0;
-// let leftSum = 0;
-// nums.forEach((element) => totalSum += element);
-// for(let e=0; e<nums.length; e++){
-//  if(totalSum - leftSum - nums[e] === leftSum){
-//     return e;
-//  }
-//  leftSum += nums[e]
+// <<<<<<< HEAD
+// //   let totalSum = 0;
+// // let leftSum = 0;
+// =======
+// //   let totalSum = 0;
+// // let leftSum = 0;
+// >>>>>>> 92bb53166810b25b5a1b042d634a3676955e3992
+// // nums.forEach((element) => totalSum += element);
+// // for(let e=0; e<nums.length; e++){
+// //  if(totalSum - leftSum - nums[e] === leftSum){
+// //     return e;
+// //  }
+// //  leftSum += nums[e]
+// // }
+// <<<<<<< HEAD
+// // return -1;
+// };
+
+// function flattenDeep(array) {
+//   // CODE HERE
+//   console.log(array[0])
+//   const newArray = array.slice(1);
+//   console.log(newArray);
+//   console.log(newArray[0]);
 // }
+
+// console.log(flattenDeep([1, [2, 3, [4]]]));
+
+// =======
 // return -1;
 // };
 
@@ -272,32 +292,135 @@ console.log("Hello");
 // console.log(isIsomorphic("foo", "bar"));
 // console.log(isIsomorphic("paper", "title"));
 
-var isSubsequence = function (s, t) {
-  //create a new a s variable
-  console.log(s.length);
-  let newVar = "";
-  //for loop over the s input
-  for (let i = 0; i < s.length; i++) {
-    let newS = s[i];
-    //for loop over the t input string
-    for (let j = 0; j < t.length; j++) {
-      //conditional: if s === t then push that
-      if (newS === t[j]) {
-        newVar += t[j];
-        console.log(newVar);
-      }
-    }
-  }
-  //outside the for loop
-  //conditonal if new sVar is === input s string return false
-  console.log(newVar);
-  if (s === newVar) {
-    return true;
-  } else {
-    return false;
-  }
-  //else: return false
-};
+// var isSubsequence = function (s, t) {
+//   //create a new a s variable
+//   console.log(s.length);
+//   let newVar = "";
+//for loop over the s input
+//   for (let i = 0; i < s.length; i++) {
+//     let newS = s[i];
+//     //for loop over the t input string
+//     for (let j = 0; j < t.length; j++) {
+//       //conditional: if s === t then push that
+//       if (newS === t[j]) {
+//         newVar += t[j];
+//         console.log(newVar);
+//       }
+//     }
+//   }
+//   //outside the for loop
+//   //conditonal if new sVar is === input s string return false
+//   console.log(newVar);
+//   if (s === newVar) {
+//     return true;
+//   } else {
+//     return false;
+//   }
+//   //else: return false
+// };
+
+// // console.log(isSubsequence("abc", "ahbgdc"));
+// // console.log(isSubsequence("axc", "ahbgdc"));
+// console.log(isSubsequence("acb", "ahbgdc"));
+// console.log(isSubsequence("acb", "ahbgdc"));
+// console.log(isSubsequence("acb", "ahbgdc"));
+// console.log(isSubsequence("acb", "ahbgdc"));
+
+// function reduce(array, callback, start) {
+//   // CODE HERE
+//   console.log(callback)
+//   if (!start) {
+//     let finalValue = array[0]
+//     console.log(finalValue)
+//   for (let i = 1; i < array.length; i++) {
+//     finalValue += array[i];
+//     console.log(finalValue)
+//   }
+//   return finalValue;
+// }
+
+// function reduce(array, callback, start) {
+//   // CODE HERE
+//   let newValue = 0;
+//   if (!start) {
+//     let finalValue = array[0]
+//   for (let i = 1; i < array.length; i++) {
+//     console.log(callback(finalValue, array[i]))
+//     finalValue += callback(array[i]);
+//   }
+//   return finalValue;
+// }
+
+// function flattenDeep(array) {
+//   let newArr = [];
+//   //if array.length === 0 then return newArr
+//   //for loop over the input array
+//   for (let i = 0; i < array.length; i++) {
+//   //conditional: if array[0] doesn't equal an array we are going to push/slice it to the newArray
+//   if (Array.isArray(array[i])) {
+//     newArr = newArr.concat(flattenDeep(array[i]));
+//   } else {
+//   //conditional: else return flattenDeep over
+//     newArr.push(array[i]);
+//   }
+//   }
+//   return newArr;
+// }
+
+// console.log(flattenDeep([1, [2, 3, [4]]]));
+
+// function flattenDeep(array) {
+//   let newArr = [];
+//   //if array.length === 0 then return newArr
+//   //for loop over the input array
+//   for (let i = 0; i < array.length; i++) {
+//   //conditional: if array[0] doesn't equal an array we are going to push/slice it to the newArray
+//   if (Array.isArray(array[i])) {
+//     newArr = newArr.concat(flattenDeep(array[i]));
+//   } else {
+//   //conditional: else return flattenDeep over
+//     newArr.push(array[i]);
+//   }
+//   }
+//   return newArr;
+// }
+
+// console.log(flattenDeep([1, [2, 3, [4]]]));
+
+// function flattenDeep(array) {
+//   let newArr = [];
+//   //if array.length === 0 then return newArr
+//   //for loop over the input array
+//   for (let i = 0; i < array.length; i++) {
+//   //conditional: if array[0] doesn't equal an array we are going to push/slice it to the newArray
+//   if (Array.isArray(array[i])) {
+//     newArr = newArr.concat(flattenDeep(array[i]));
+//   } else {
+//   //conditional: else return flattenDeep over
+//     newArr.push(array[i]);
+//   }
+//   }
+//   return newArr;
+// }
+
+// console.log(flattenDeep([1, [2, 3, [4]]]));
+
+// var runningSum = function(nums) {
+//   //create a newSum array
+//   let sumArray = [];
+//   let updatedSum = 0;
+//   //for loop over the input array
+//   for (let i = 0; i < nums.length; i++) {
+//   //updatedSum += nums[i]
+//     updatedSum += nums[i];
+//   //sumArray.push(updatedSum0)
+//   sumArray.push(updatedSum);
+//   }
+//     return sumArray;
+// };
+// console.log(runningSum([1,2,3,4]))
+
+var pivotIndex = function (nums) {};
 
 // console.log(isSubsequence("abc", "ahbgdc"));
 // console.log(isSubsequence("axc", "ahbgdc"));
@@ -313,3 +436,56 @@ console.log(isSubsequence("acb", "ahbgdc"));
 console.log(isSubsequence("acb", "ahbgdc"));
 console.log(isSubsequence("acb", "ahbgdc"));
 console.log(isSubsequence("acb", "ahbgdc"));
+console.log(pivotIndex([1, 7, 3, 6, 5, 6]));
+console.log(pivotIndex([1, 7, 3, 6, 5, 6]));
+console.log(pivotIndex([1, 7, 3, 6, 5, 6]));
+console.log(pivotIndex([1, 7, 3, 6, 5, 6]));
+console.log(pivotIndex([1, 7, 3, 6, 5, 6]));
+console.log(pivotIndex([1, 7, 3, 6, 5, 6]));
+console.log(pivotIndex([1, 7, 3, 6, 5, 6]));
+console.log(pivotIndex([1, 7, 3, 6, 5, 6]));
+console.log(pivotIndex([1, 7, 3, 6, 5, 6]));
+console.log(pivotIndex([1, 7, 3, 6, 5, 6]));
+console.log(pivotIndex([1, 7, 3, 6, 5, 6]));
+console.log(pivotIndex([1, 7, 3, 6, 5, 6]));
+console.log(pivotIndex([1, 7, 3, 6, 5, 6]));
+console.log(pivotIndex([1, 7, 3, 6, 5, 6]));
+console.log(pivotIndex([1, 7, 3, 6, 5, 6]));
+
+console.log(pivotIndex([1, 7, 3, 6, 5, 6]));
+console.log(pivotIndex([1, 7, 3, 6, 5, 6]));
+console.log(pivotIndex([1, 7, 3, 6, 5, 6]));
+console.log(pivotIndex([1, 7, 3, 6, 5, 6]));
+console.log(pivotIndex([1, 7, 3, 6, 5, 6]));
+console.log(pivotIndex([1, 7, 3, 6, 5, 6]));
+console.log(pivotIndex([1, 7, 3, 6, 5, 6]));
+console.log(pivotIndex([1, 7, 3, 6, 5, 6]));
+console.log(pivotIndex([1, 7, 3, 6, 5, 6]));
+console.log(pivotIndex([1, 7, 3, 6, 5, 6]));
+console.log(pivotIndex([1, 7, 3, 6, 5, 6]));
+console.log(pivotIndex([1, 7, 3, 6, 5, 6]));
+console.log(pivotIndex([1, 7, 3, 6, 5, 6]));
+console.log(pivotIndex([1, 7, 3, 6, 5, 6]));
+console.log(pivotIndex([1, 7, 3, 6, 5, 6]));
+console.log(pivotIndex([1, 7, 3, 6, 5, 6]));
+console.log(pivotIndex([1, 7, 3, 6, 5, 6]));
+console.log(pivotIndex([1, 7, 3, 6, 5, 6]));
+console.log(pivotIndex([1, 7, 3, 6, 5, 6]));
+console.log(pivotIndex([1, 7, 3, 6, 5, 6]));
+console.log(pivotIndex([1, 7, 3, 6, 5, 6]));
+console.log(pivotIndex([1, 7, 3, 6, 5, 6]));
+console.log(pivotIndex([1, 7, 3, 6, 5, 6]));
+console.log(pivotIndex([1, 7, 3, 6, 5, 6]));
+console.log(pivotIndex([1, 7, 3, 6, 5, 6]));
+console.log(pivotIndex([1, 7, 3, 6, 5, 6]));
+console.log(pivotIndex([1, 7, 3, 6, 5, 6]));
+console.log(pivotIndex([1, 7, 3, 6, 5, 6]));
+console.log(pivotIndex([1, 7, 3, 6, 5, 6]));
+console.log(pivotIndex([1, 7, 3, 6, 5, 6]));
+console.log(pivotIndex([1, 7, 3, 6, 5, 6]));
+console.log(pivotIndex([1, 7, 3, 6, 5, 6]));
+
+console.log(pivotIndex([1, 7, 3, 6, 5, 6]));
+console.log(pivotIndex([1, 7, 3, 6, 5, 6]));
+console.log(pivotIndex([1, 7, 3, 6, 5, 6]));
+console.log(pivotIndex([1, 7, 3, 6, 5, 6]));
