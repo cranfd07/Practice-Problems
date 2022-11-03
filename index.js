@@ -308,3 +308,8 @@ console.log(isSubsequence("acb", "ahbgdc"));
 console.log(isSubsequence("acb", "ahbgdc"));
 console.log(isSubsequence("acb", "ahbgdc"));
 console.log(isSubsequence("acb", "ahbgdc"));
+
+console.log(isSubsequence("acb", "ahbgdc"));
+console.log(isSubsequence("acb", "ahbgdc"));
+console.log(isSubsequence("acb", "ahbgdc"));
+console.log(isSubsequence("acb", "ahbgdc"));
