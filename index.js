@@ -420,102 +420,124 @@ console.log("Hello");
 // };
 // console.log(runningSum([1,2,3,4]))
 
-var pivotIndex = function (nums) {};
+// var pivotIndex = function (nums) {};
 
-// console.log(isSubsequence("abc", "ahbgdc"));
-// console.log(isSubsequence("axc", "ahbgdc"));
-console.log(isSubsequence("acb", "ahbgdc"));
-console.log(isSubsequence("acb", "ahbgdc"));
-console.log(isSubsequence("acb", "ahbgdc"));
-console.log(isSubsequence("acb", "ahbgdc"));
-console.log(isSubsequence("acb", "ahbgdc"));
-console.log(isSubsequence("acb", "ahbgdc"));
-console.log(isSubsequence("acb", "ahbgdc"));
+// // console.log(isSubsequence("abc", "ahbgdc"));
+// // console.log(isSubsequence("axc", "ahbgdc"));
+// console.log(isSubsequence("acb", "ahbgdc"));
+// console.log(isSubsequence("acb", "ahbgdc"));
+// console.log(isSubsequence("acb", "ahbgdc"));
+// console.log(isSubsequence("acb", "ahbgdc"));
+// console.log(isSubsequence("acb", "ahbgdc"));
+// console.log(isSubsequence("acb", "ahbgdc"));
+// console.log(isSubsequence("acb", "ahbgdc"));
 
-console.log(isSubsequence("acb", "ahbgdc"));
-console.log(isSubsequence("acb", "ahbgdc"));
-console.log(isSubsequence("acb", "ahbgdc"));
-console.log(isSubsequence("acb", "ahbgdc"));
-console.log(pivotIndex([1, 7, 3, 6, 5, 6]));
-console.log(pivotIndex([1, 7, 3, 6, 5, 6]));
-console.log(pivotIndex([1, 7, 3, 6, 5, 6]));
-console.log(pivotIndex([1, 7, 3, 6, 5, 6]));
-console.log(pivotIndex([1, 7, 3, 6, 5, 6]));
-console.log(pivotIndex([1, 7, 3, 6, 5, 6]));
-console.log(pivotIndex([1, 7, 3, 6, 5, 6]));
-console.log(pivotIndex([1, 7, 3, 6, 5, 6]));
-console.log(pivotIndex([1, 7, 3, 6, 5, 6]));
-console.log(pivotIndex([1, 7, 3, 6, 5, 6]));
-console.log(pivotIndex([1, 7, 3, 6, 5, 6]));
-console.log(pivotIndex([1, 7, 3, 6, 5, 6]));
-console.log(pivotIndex([1, 7, 3, 6, 5, 6]));
-console.log(pivotIndex([1, 7, 3, 6, 5, 6]));
-console.log(pivotIndex([1, 7, 3, 6, 5, 6]));
+// console.log(isSubsequence("acb", "ahbgdc"));
+// console.log(isSubsequence("acb", "ahbgdc"));
+// console.log(isSubsequence("acb", "ahbgdc"));
+// console.log(isSubsequence("acb", "ahbgdc"));
+// console.log(pivotIndex([1, 7, 3, 6, 5, 6]));
+// console.log(pivotIndex([1, 7, 3, 6, 5, 6]));
+// console.log(pivotIndex([1, 7, 3, 6, 5, 6]));
+// console.log(pivotIndex([1, 7, 3, 6, 5, 6]));
+// console.log(pivotIndex([1, 7, 3, 6, 5, 6]));
+// console.log(pivotIndex([1, 7, 3, 6, 5, 6]));
+// console.log(pivotIndex([1, 7, 3, 6, 5, 6]));
+// console.log(pivotIndex([1, 7, 3, 6, 5, 6]));
+// console.log(pivotIndex([1, 7, 3, 6, 5, 6]));
+// console.log(pivotIndex([1, 7, 3, 6, 5, 6]));
+// console.log(pivotIndex([1, 7, 3, 6, 5, 6]));
+// console.log(pivotIndex([1, 7, 3, 6, 5, 6]));
+// console.log(pivotIndex([1, 7, 3, 6, 5, 6]));
+// console.log(pivotIndex([1, 7, 3, 6, 5, 6]));
+// console.log(pivotIndex([1, 7, 3, 6, 5, 6]));
 
-console.log(pivotIndex([1, 7, 3, 6, 5, 6]));
-console.log(pivotIndex([1, 7, 3, 6, 5, 6]));
-console.log(pivotIndex([1, 7, 3, 6, 5, 6]));
-console.log(pivotIndex([1, 7, 3, 6, 5, 6]));
-console.log(pivotIndex([1, 7, 3, 6, 5, 6]));
-console.log(pivotIndex([1, 7, 3, 6, 5, 6]));
-console.log(pivotIndex([1, 7, 3, 6, 5, 6]));
-console.log(pivotIndex([1, 7, 3, 6, 5, 6]));
-console.log(pivotIndex([1, 7, 3, 6, 5, 6]));
-console.log(pivotIndex([1, 7, 3, 6, 5, 6]));
-console.log(pivotIndex([1, 7, 3, 6, 5, 6]));
-console.log(pivotIndex([1, 7, 3, 6, 5, 6]));
-console.log(pivotIndex([1, 7, 3, 6, 5, 6]));
-console.log(pivotIndex([1, 7, 3, 6, 5, 6]));
-console.log(pivotIndex([1, 7, 3, 6, 5, 6]));
-console.log(pivotIndex([1, 7, 3, 6, 5, 6]));
-console.log(pivotIndex([1, 7, 3, 6, 5, 6]));
-console.log(pivotIndex([1, 7, 3, 6, 5, 6]));
-console.log(pivotIndex([1, 7, 3, 6, 5, 6]));
-console.log(pivotIndex([1, 7, 3, 6, 5, 6]));
-console.log(pivotIndex([1, 7, 3, 6, 5, 6]));
-console.log(pivotIndex([1, 7, 3, 6, 5, 6]));
-console.log(pivotIndex([1, 7, 3, 6, 5, 6]));
-console.log(pivotIndex([1, 7, 3, 6, 5, 6]));
-console.log(pivotIndex([1, 7, 3, 6, 5, 6]));
-console.log(pivotIndex([1, 7, 3, 6, 5, 6]));
-console.log(pivotIndex([1, 7, 3, 6, 5, 6]));
-console.log(pivotIndex([1, 7, 3, 6, 5, 6]));
-console.log(pivotIndex([1, 7, 3, 6, 5, 6]));
-console.log(pivotIndex([1, 7, 3, 6, 5, 6]));
-console.log(pivotIndex([1, 7, 3, 6, 5, 6]));
-console.log(pivotIndex([1, 7, 3, 6, 5, 6]));
+// console.log(pivotIndex([1, 7, 3, 6, 5, 6]));
+// console.log(pivotIndex([1, 7, 3, 6, 5, 6]));
+// console.log(pivotIndex([1, 7, 3, 6, 5, 6]));
+// console.log(pivotIndex([1, 7, 3, 6, 5, 6]));
+// console.log(pivotIndex([1, 7, 3, 6, 5, 6]));
+// console.log(pivotIndex([1, 7, 3, 6, 5, 6]));
+// console.log(pivotIndex([1, 7, 3, 6, 5, 6]));
+// console.log(pivotIndex([1, 7, 3, 6, 5, 6]));
+// console.log(pivotIndex([1, 7, 3, 6, 5, 6]));
+// console.log(pivotIndex([1, 7, 3, 6, 5, 6]));
+// console.log(pivotIndex([1, 7, 3, 6, 5, 6]));
+// console.log(pivotIndex([1, 7, 3, 6, 5, 6]));
+// console.log(pivotIndex([1, 7, 3, 6, 5, 6]));
+// console.log(pivotIndex([1, 7, 3, 6, 5, 6]));
+// console.log(pivotIndex([1, 7, 3, 6, 5, 6]));
+// console.log(pivotIndex([1, 7, 3, 6, 5, 6]));
+// console.log(pivotIndex([1, 7, 3, 6, 5, 6]));
+// console.log(pivotIndex([1, 7, 3, 6, 5, 6]));
+// console.log(pivotIndex([1, 7, 3, 6, 5, 6]));
+// console.log(pivotIndex([1, 7, 3, 6, 5, 6]));
+// console.log(pivotIndex([1, 7, 3, 6, 5, 6]));
+// console.log(pivotIndex([1, 7, 3, 6, 5, 6]));
+// console.log(pivotIndex([1, 7, 3, 6, 5, 6]));
+// console.log(pivotIndex([1, 7, 3, 6, 5, 6]));
+// console.log(pivotIndex([1, 7, 3, 6, 5, 6]));
+// console.log(pivotIndex([1, 7, 3, 6, 5, 6]));
+// console.log(pivotIndex([1, 7, 3, 6, 5, 6]));
+// console.log(pivotIndex([1, 7, 3, 6, 5, 6]));
+// console.log(pivotIndex([1, 7, 3, 6, 5, 6]));
+// console.log(pivotIndex([1, 7, 3, 6, 5, 6]));
+// console.log(pivotIndex([1, 7, 3, 6, 5, 6]));
+// console.log(pivotIndex([1, 7, 3, 6, 5, 6]));
 
-console.log(pivotIndex([1, 7, 3, 6, 5, 6]));
-console.log(pivotIndex([1, 7, 3, 6, 5, 6]));
-console.log(pivotIndex([1, 7, 3, 6, 5, 6]));
-console.log(pivotIndex([1, 7, 3, 6, 5, 6]));
+// console.log(pivotIndex([1, 7, 3, 6, 5, 6]));
+// console.log(pivotIndex([1, 7, 3, 6, 5, 6]));
+// console.log(pivotIndex([1, 7, 3, 6, 5, 6]));
+// console.log(pivotIndex([1, 7, 3, 6, 5, 6]));
 
-console.log(pivotIndex([1, 7, 3, 6, 5, 6]));
-console.log(pivotIndex([1, 7, 3, 6, 5, 6]));
-console.log(pivotIndex([1, 7, 3, 6, 5, 6]));
-console.log(pivotIndex([1, 7, 3, 6, 5, 6]));
-console.log(pivotIndex([1, 7, 3, 6, 5, 6]));
-console.log(pivotIndex([1, 7, 3, 6, 5, 6]));
-console.log(pivotIndex([1, 7, 3, 6, 5, 6]));
-console.log(pivotIndex([1, 7, 3, 6, 5, 6]));
+// console.log(pivotIndex([1, 7, 3, 6, 5, 6]));
+// console.log(pivotIndex([1, 7, 3, 6, 5, 6]));
+// console.log(pivotIndex([1, 7, 3, 6, 5, 6]));
+// console.log(pivotIndex([1, 7, 3, 6, 5, 6]));
+// console.log(pivotIndex([1, 7, 3, 6, 5, 6]));
+// console.log(pivotIndex([1, 7, 3, 6, 5, 6]));
+// console.log(pivotIndex([1, 7, 3, 6, 5, 6]));
+// console.log(pivotIndex([1, 7, 3, 6, 5, 6]));
 
-console.log(pivotIndex([1, 7, 3, 6, 5, 6]));
-console.log(pivotIndex([1, 7, 3, 6, 5, 6]));
-console.log(pivotIndex([1, 7, 3, 6, 5, 6]));
-console.log(pivotIndex([1, 7, 3, 6, 5, 6]));
-console.log(pivotIndex([1, 7, 3, 6, 5, 6]));
-console.log(pivotIndex([1, 7, 3, 6, 5, 6]));
-console.log(pivotIndex([1, 7, 3, 6, 5, 6]));
-console.log(pivotIndex([1, 7, 3, 6, 5, 6]));
-console.log(pivotIndex([1, 7, 3, 6, 5, 6]));
-console.log(pivotIndex([1, 7, 3, 6, 5, 6]));
-console.log(pivotIndex([1, 7, 3, 6, 5, 6]));
-console.log(pivotIndex([1, 7, 3, 6, 5, 6]));
-console.log(pivotIndex([1, 7, 3, 6, 5, 6]));
-console.log(pivotIndex([1, 7, 3, 6, 5, 6]));
-console.log(pivotIndex([1, 7, 3, 6, 5, 6]));
-console.log(pivotIndex([1, 7, 3, 6, 5, 6]));
-console.log(pivotIndex([1, 7, 3, 6, 5, 6]));
-console.log(pivotIndex([1, 7, 3, 6, 5, 6]));
-console.log(pivotIndex([1, 7, 3, 6, 5, 6]));
-console.log(pivotIndex([1, 7, 3, 6, 5, 6]));
+// console.log(pivotIndex([1, 7, 3, 6, 5, 6]));
+// console.log(pivotIndex([1, 7, 3, 6, 5, 6]));
+// console.log(pivotIndex([1, 7, 3, 6, 5, 6]));
+// console.log(pivotIndex([1, 7, 3, 6, 5, 6]));
+// console.log(pivotIndex([1, 7, 3, 6, 5, 6]));
+// console.log(pivotIndex([1, 7, 3, 6, 5, 6]));
+// console.log(pivotIndex([1, 7, 3, 6, 5, 6]));
+// console.log(pivotIndex([1, 7, 3, 6, 5, 6]));
+// console.log(pivotIndex([1, 7, 3, 6, 5, 6]));
+// console.log(pivotIndex([1, 7, 3, 6, 5, 6]));
+// console.log(pivotIndex([1, 7, 3, 6, 5, 6]));
+// console.log(pivotIndex([1, 7, 3, 6, 5, 6]));
+// console.log(pivotIndex([1, 7, 3, 6, 5, 6]));
+// console.log(pivotIndex([1, 7, 3, 6, 5, 6]));
+// console.log(pivotIndex([1, 7, 3, 6, 5, 6]));
+// console.log(pivotIndex([1, 7, 3, 6, 5, 6]));
+// console.log(pivotIndex([1, 7, 3, 6, 5, 6]));
+// console.log(pivotIndex([1, 7, 3, 6, 5, 6]));
+// console.log(pivotIndex([1, 7, 3, 6, 5, 6]));
+// console.log(pivotIndex([1, 7, 3, 6, 5, 6]));
+
+var twoSum = function (nums, target) {
+  //create a newVar with the sum
+  //conditional if newVar === target
+  //for loop over the nums array
+  for (let i = 0; i < nums.length; i++) {
+    let numsTwo = nums[i];
+    for (let j = 0; j < nums.length; j++) {
+      if (i !== j) {
+        if (numsTwo + nums[j] === target) {
+          return [i, j];
+        }
+      }
+    }
+  }
+  //for loop over numsTwo array again
+  //conditional if numsTwo[j] !== nums[i] then
+};
+
+console.log(twoSum([2, 7, 11, 15], 9));
+console.log(twoSum([3, 2, 4], 6));
+console.log(twoSum([3, 3], 6));
