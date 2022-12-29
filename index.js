@@ -572,4 +572,115 @@ var lengthOfLongestSubstring = function (s) {
   //for loop using first el in string to see when it is repeated
 };
 
-console.log(lengthOfLongestSubstring("abcabcbb"));
+// console.log(lengthOfLongestSubstring("abcabcbb"));
+
+// //Recursion
+// console.log("Hello, world!");
+
+// function repeater(char) {
+//   //baseCase: if char.length === 5 return char
+//   if (char.length === 5) {
+//     return char;
+//   }
+//   //return function repeater(char[0] + char)
+//   return repeater(char[0] + char);
+// }
+
+// // To check if you've completed the challenge, uncomment these console.logs!
+// console.log(repeater("g"));
+// console.log(repeater("j"));
+
+// function factorial(num, finalValue = 1) {
+//   if (num === 1) return finalValue;
+//   let numValue = num - 1;
+//   let updatedValue = num * finalValue;
+//   return factorial(numValue, updatedValue);
+// }
+
+// // To check if you've completed the challenge, uncomment these console.logs!
+// console.log(factorial(4)); // -> 24
+// console.log(factorial(6)); // -> 720
+
+// function getLength(array, length = 0) {
+//   //conditional: array[0] === undefined return length
+//   if (array[0] === undefined) return length;
+//   //length++;
+//   length++;
+//   //return getLength(array.slice(1), length)
+//   return getLength(array.slice(1), length);
+// }
+
+// // To check if you've completed the challenge, uncomment these console.logs!
+// console.log(getLength([1])); // -> 1
+// console.log(getLength([1, 2])); // -> 2
+// console.log(getLength([1, 2, 3, 4, 5])); // -> 5
+// console.log(getLength([])); // -> 0
+
+// function pow(base, exponent) {
+//   //baseCase: exponenet === 0 then return base
+//   if (exponent === 1) return base;
+//   //base can't change
+//   //return base * pow(base, exponent - 1)
+//   exponent--;
+//   return base * pow(base, exponent);
+// }
+
+// //1) conditional: false; return 2 * [pow(2, 3) === 8] value === 16
+// //2) conditional: false; return 2 * [pow(2, 2) === 4] value === 8
+// //3) conditional: false; return 2 * [pow(2, 1) === 2] value === 4
+// //4) conditional: true; return 2
+
+// // To check if you've completed the challenge, uncomment these console.logs!
+// console.log(pow(2, 4)); // -> 16
+// console.log(pow(3, 5)); // -> 243a
+
+// function flow(input, funcArray) {
+//   if (funcArray[0] === undefined) return input;
+//   return flow(funcArray[0](input), funcArray.slice(1));
+// }
+
+// // To check if you've completed the challenge, uncomment this code!
+// function multiplyBy2(num) {
+//   return num * 2;
+// }
+// function add7(num) {
+//   return num + 7;
+// }
+// function modulo4(num) {
+//   return num % 4;
+// }
+// function subtract10(num) {
+//   return num - 10;
+// }
+const arrayOfFunctions = [multiplyBy2, add7, modulo4, subtract10];
+console.log(flow(2, arrayOfFunctions)); // -> -7
+
+function shuffleCards(topHalf, bottomHalf) {
+  // YOUR CODE HERE
+  if (topHalf[0] === undefined) {
+    return bottomHalf;
+  } else if (bottomHalf[0] === undefined) {
+    return topHalf;
+  }
+  return [topHalf[0], bottomHalf[0]].concat(
+    shuffleCards(topHalf.slice(1), bottomHalf.slice(1))
+  );
+}
+
+// UNCOMMENT TO TEST YOUR WORK
+const topHalf = [
+  "Queen of Diamonds",
+  "Five of Hearts",
+  "Ace of Spades",
+  "Eight of Clubs",
+];
+const bottomHalf = ["Jack of Hearts", "Ten of Spades"];
+console.log(shuffleCards(topHalf, bottomHalf));
+/*-> ['Queen of Diamonds',
+        'Jack of Hearts',
+        'Five of Hearts',
+        'Ten of Spades',
+        'Ace of Spades',
+        'Eight of Clubs',
+      ]
+  */
