@@ -652,58 +652,83 @@ var lengthOfLongestSubstring = function (s) {
 // function subtract10(num) {
 //   return num - 10;
 // }
-const arrayOfFunctions = [multiplyBy2, add7, modulo4, subtract10];
-console.log(flow(2, arrayOfFunctions)); // -> -7
+// const arrayOfFunctions = [multiplyBy2, add7, modulo4, subtract10];
+// console.log(flow(2, arrayOfFunctions)); // -> -7
 
-function shuffleCards(topHalf, bottomHalf) {
-  // YOUR CODE HERE
-  if (topHalf[0] === undefined) {
-    return bottomHalf;
-  } else if (bottomHalf[0] === undefined) {
-    return topHalf;
-  }
-  return [topHalf[0], bottomHalf[0]].concat(
-    shuffleCards(topHalf.slice(1), bottomHalf.slice(1))
-  );
+// function shuffleCards(topHalf, bottomHalf) {
+//   // YOUR CODE HERE
+//   if (topHalf[0] === undefined) {
+//     return bottomHalf;
+//   } else if (bottomHalf[0] === undefined) {
+//     return topHalf;
+//   }
+//   return [topHalf[0], bottomHalf[0]].concat(
+//     shuffleCards(topHalf.slice(1), bottomHalf.slice(1))
+//   );
+// }
+
+// // UNCOMMENT TO TEST YOUR WORK
+// const topHalf = [
+//   "Queen of Diamonds",
+//   "Five of Hearts",
+//   "Ace of Spades",
+//   "Eight of Clubs",
+// ];
+// const bottomHalf = ["Jack of Hearts", "Ten of Spades"];
+// console.log(shuffleCards(topHalf, bottomHalf));
+// /*-> ['Queen of Diamonds',
+//         'Jack of Hearts',
+//         'Five of Hearts',
+//         'Ten of Spades',
+//         'Ace of Spades',
+//         'Eight of Clubs',
+//       ]
+//   */
+
+// const personStore = {
+//   greet: function () {
+//     console.log("hello");
+//   },
+//   introduce: function () {
+//     console.log(`Hi, my name is ${sandra.name}`);
+//   },
+// };
+
+// function personFromPersonStore(name, age) {
+//   const person = Object.create(personStore);
+//   person.name = name;
+//   person.age = age;
+
+//   return person;
+// }
+
+// const sandra = personFromPersonStore("Sandra", 26);
+// // add code here
+
+// // Uncomment this line to check your work!
+// sandra.introduce(); // -> Logs 'Hi, my name is Sandra'
+
+function Dog(name, breed) {
+  this.name = name;
+  this.breed = breed;
+  this.tricks = [];
 }
-
-// UNCOMMENT TO TEST YOUR WORK
-const topHalf = [
-  "Queen of Diamonds",
-  "Five of Hearts",
-  "Ace of Spades",
-  "Eight of Clubs",
-];
-const bottomHalf = ["Jack of Hearts", "Ten of Spades"];
-console.log(shuffleCards(topHalf, bottomHalf));
-/*-> ['Queen of Diamonds',
-        'Jack of Hearts',
-        'Five of Hearts',
-        'Ten of Spades',
-        'Ace of Spades',
-        'Eight of Clubs',
-      ]
-  */
-
-const personStore = {
-  greet: function () {
-    console.log("hello");
-  },
-  introduce: function () {
-    console.log(`Hi, my name is ${sandra.name}`);
-  },
+Dog.prototype.learnTrick = function (trick) {
+  Dog.tricks = [trick];
 };
 
-function personFromPersonStore(name, age) {
-  const person = Object.create(personStore);
-  person.name = name;
-  person.age = age;
+Dog.prototype.performTrick = function (trick) {
+  for (let i = 0; i < Dog.tricks.length; i++) {
+    if (Dog.tricks[i] === trick) {
+      console.log(`${this.name} performed ${trick}!`);
+    }
+  }
+  console.log(`${this.name} doesn\'t know that trick.`);
+};
 
-  return person;
-}
+const fido = new Dog("Fido", "poodle");
 
-const sandra = personFromPersonStore("Sandra", 26);
-// add code here
-
-// Uncomment this line to check your work!
-sandra.introduce(); // -> Logs 'Hi, my name is Sandra'
+// Uncomment these lines to check your work!
+fido.learnTrick("fetch");
+fido.performTrick("fetch"); // should log 'Fido performed fetch!'
+fido.performTrick("sit"); // should log 'Fido doesn't know that trick.'
