@@ -542,35 +542,35 @@ console.log("Hello");
 // console.log(twoSum([3, 2, 4], 6));
 // console.log(twoSum([3, 3], 6));
 
-var lengthOfLongestSubstring = function (s) {
-  //create a new variable as an empty string
-  //for loop over input string
-  for (let i = 0; i < s.length; i++) {
-    let checkerEl = s[i];
-    for (let j = 0; j < s.length; j++) {
-      if (i !== j) {
-        console.log(checkerEl, s[j]);
-      }
-    }
-  }
-  //for loop using first el in string to see when it is repeated
-};
+// var lengthOfLongestSubstring = function (s) {
+//   //create a new variable as an empty string
+//   //for loop over input string
+//   for (let i = 0; i < s.length; i++) {
+//     let checkerEl = s[i];
+//     for (let j = 0; j < s.length; j++) {
+//       if (i !== j) {
+//         console.log(checkerEl, s[j]);
+//       }
+//     }
+//   }
+//   //for loop using first el in string to see when it is repeated
+// };
 
-console.log(lengthOfLongestSubstring("abcabcbb"));
+// console.log(lengthOfLongestSubstring("abcabcbb"));
 
-var lengthOfLongestSubstring = function (s) {
-  //create a new variable as an empty string
-  //for loop over input string
-  for (let i = 0; i < s.length; i++) {
-    let checkerEl = s[i];
-    for (let j = 0; j < s.length; j++) {
-      if (i !== j) {
-        console.log(checkerEl, s[j]);
-      }
-    }
-  }
-  //for loop using first el in string to see when it is repeated
-};
+// var lengthOfLongestSubstring = function (s) {
+//   //create a new variable as an empty string
+//   //for loop over input string
+//   for (let i = 0; i < s.length; i++) {
+//     let checkerEl = s[i];
+//     for (let j = 0; j < s.length; j++) {
+//       if (i !== j) {
+//         console.log(checkerEl, s[j]);
+//       }
+//     }
+//   }
+//   //for loop using first el in string to see when it is repeated
+// };
 
 // console.log(lengthOfLongestSubstring("abcabcbb"));
 
@@ -708,27 +708,51 @@ var lengthOfLongestSubstring = function (s) {
 // // Uncomment this line to check your work!
 // sandra.introduce(); // -> Logs 'Hi, my name is Sandra'
 
-function Dog(name, breed) {
-  this.name = name;
-  this.breed = breed;
-  this.tricks = [];
+// function Dog(name, breed) {
+//   this.name = name;
+//   this.breed = breed;
+//   this.tricks = [];
+// }
+// Dog.prototype.learnTrick = function (trick) {
+//   Dog.tricks = [trick];
+// };
+
+// Dog.prototype.performTrick = function (trick) {
+//   for (let i = 0; i < Dog.tricks.length; i++) {
+//     if (Dog.tricks[i] === trick) {
+//       console.log(`${this.name} performed ${trick}!`);
+//     }
+//   }
+//   console.log(`${this.name} doesn\'t know that trick.`);
+// };
+
+// const fido = new Dog("Fido", "poodle");
+
+// // Uncomment these lines to check your work!
+// fido.learnTrick("fetch");
+// fido.performTrick("fetch"); // should log 'Fido performed fetch!'
+// fido.performTrick("sit"); // should log 'Fido doesn't know that trick.'
+
+//Two parameters item and price
+function Inventory(item, price) {
+  // add code here
+  //declare a variable set equal to new keyword with an invoked functin trackInventory()
+  const trackInventory = new InventoryCalc();
+  //use the THIS keyword to set passed-in parameter item to equal a new object with two properties price and quantity which 	will be intiatially evaluated to 0
+  trackInventory.item = {
+    price: 1,
+    quantity: 1,
+  };
+  return trackInventory;
 }
-Dog.prototype.learnTrick = function (trick) {
-  Dog.tricks = [trick];
-};
 
-Dog.prototype.performTrick = function (trick) {
-  for (let i = 0; i < Dog.tricks.length; i++) {
-    if (Dog.tricks[i] === trick) {
-      console.log(`${this.name} performed ${trick}!`);
-    }
-  }
-  console.log(`${this.name} doesn\'t know that trick.`);
-};
-
-const fido = new Dog("Fido", "poodle");
+const myInventory = new Inventory("cucumber", 2);
 
 // Uncomment these lines to check your work!
-fido.learnTrick("fetch");
-fido.performTrick("fetch"); // should log 'Fido performed fetch!'
-fido.performTrick("sit"); // should log 'Fido doesn't know that trick.'
+myInventory.addItem("carrot", 1);
+console.log(myInventory.checkItem("cucumber")); // Logs: { price: 2, quantity: 1 }
+myInventory.addItem("cucumber", 3);
+console.log(myInventory.deleteItem("carrot")); // Logs: 'Deleted'
+console.log(myInventory.deleteItem("carrot")); // Logs: 'Nothing to delete'
+console.log(myInventory); // Logs: { cucumber: { price: 3, quantity: 2 }, carrot: { price: 1, quantity: 0 } }
+console.log(myInventory.checkItem("radish")); //
