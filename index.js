@@ -734,25 +734,66 @@ console.log("Hello");
 // fido.performTrick("sit"); // should log 'Fido doesn't know that trick.'
 
 //Two parameters item and price
+// function Inventory(item, price) {
+//   // add code here
+//   //declare a variable set equal to new keyword with an invoked functin trackInventory()
+//   const trackInventory = new InventoryCalc();
+//   //use the THIS keyword to set passed-in parameter item to equal a new object with two properties price and quantity which 	will be intiatially evaluated to 0
+//   trackInventory.item = {
+//     price: 1,
+//     quantity: 1,
+//   };
+//   return trackInventory;
+// }
+
+// const myInventory = new Inventory("cucumber", 2);
+
+// // Uncomment these lines to check your work!
+// myInventory.addItem("carrot", 1);
+// console.log(myInventory.checkItem("cucumber")); // Logs: { price: 2, quantity: 1 }
+// myInventory.addItem("cucumber", 3);
+// console.log(myInventory.deleteItem("carrot")); // Logs: 'Deleted'
+// console.log(myInventory.deleteItem("carrot")); // Logs: 'Nothing to delete'
+// console.log(myInventory); // Logs: { cucumber: { price: 3, quantity: 2 }, carrot: { price: 1, quantity: 0 } }
+// console.log(myInventory.checkItem("radish")); //
+
+function InventoryMethods(item, price) {
+  this.addItem = function () {
+    //conditional we want to check and see if the item exists in the inventory on trackInventory if it doesn't
+    //add one, if it does, increase that items quantity property by one and replace the price with whatever number was just passed in
+  };
+  this.deleteItem = function () {
+    //conditional if the matching property exists on the Inventory object then decrement the quantity by 1 and return the string Deleted.
+    //If the quantity is already 0 return the string 'Nothing to delete.'
+  };
+  this.checkItem = function () {
+    //conditional: check to see if the str exists as a property on the Inventory object if it does return the object for that item.
+    //If NOT, return the string 'Item is not in inventory.'
+  };
+}
+
+//Two parameters item and price
 function Inventory(item, price) {
   // add code here
   //declare a variable set equal to new keyword with an invoked functin trackInventory()
-  const trackInventory = new InventoryCalc();
+  const trackInventory = new InventoryMethods();
   //use the THIS keyword to set passed-in parameter item to equal a new object with two properties price and quantity which 	will be intiatially evaluated to 0
   trackInventory.item = {
-    price: 1,
+    price: price,
     quantity: 1,
   };
   return trackInventory;
 }
 
-const myInventory = new Inventory("cucumber", 2);
+// console.log(Inventory("cucumber", 2));
 
-// Uncomment these lines to check your work!
-myInventory.addItem("carrot", 1);
-console.log(myInventory.checkItem("cucumber")); // Logs: { price: 2, quantity: 1 }
-myInventory.addItem("cucumber", 3);
-console.log(myInventory.deleteItem("carrot")); // Logs: 'Deleted'
-console.log(myInventory.deleteItem("carrot")); // Logs: 'Nothing to delete'
-console.log(myInventory); // Logs: { cucumber: { price: 3, quantity: 2 }, carrot: { price: 1, quantity: 0 } }
-console.log(myInventory.checkItem("radish")); //
+const myInventory = new Inventory("cucumber", 2);
+console.log(myInventory);
+// // Uncomment these lines to check your work!
+// myInventory.addItem('carrot', 1);
+// console.log(myInventory.checkItem('cucumber')); // Logs: { price: 2, quantity: 1 }
+// myInventory.addItem('cucumber', 3);
+// console.log(myInventory.deleteItem('carrot')); // Logs: 'Deleted'
+// console.log(myInventory.deleteItem('carrot')); // Logs: 'Nothing to delete'
+// console.log(myInventory); // Logs: { cucumber: { price: 3, quantity: 2 }, carrot: { price: 1, quantity: 0 } }
+// console.log(myInventory.checkItem('radish')); //
