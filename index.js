@@ -757,20 +757,20 @@ console.log("Hello");
 // console.log(myInventory); // Logs: { cucumber: { price: 3, quantity: 2 }, carrot: { price: 1, quantity: 0 } }
 // console.log(myInventory.checkItem("radish")); //
 
-function InventoryMethods(item, price) {
-  this.addItem = function () {
-    //conditional we want to check and see if the item exists in the inventory on trackInventory if it doesn't
-    //add one, if it does, increase that items quantity property by one and replace the price with whatever number was just passed in
-  };
-  this.deleteItem = function () {
-    //conditional if the matching property exists on the Inventory object then decrement the quantity by 1 and return the string Deleted.
-    //If the quantity is already 0 return the string 'Nothing to delete.'
-  };
-  this.checkItem = function () {
-    //conditional: check to see if the str exists as a property on the Inventory object if it does return the object for that item.
-    //If NOT, return the string 'Item is not in inventory.'
-  };
-}
+// function InventoryMethods(item, price) {
+//   this.addItem = function () {
+//     //conditional we want to check and see if the item exists in the inventory on trackInventory if it doesn't
+//     //add one, if it does, increase that items quantity property by one and replace the price with whatever number was just passed in
+//   };
+//   this.deleteItem = function () {
+//     //conditional if the matching property exists on the Inventory object then decrement the quantity by 1 and return the string Deleted.
+//     //If the quantity is already 0 return the string 'Nothing to delete.'
+//   };
+//   this.checkItem = function () {
+//     //conditional: check to see if the str exists as a property on the Inventory object if it does return the object for that item.
+//     //If NOT, return the string 'Item is not in inventory.'
+//   };
+// }
 
 //Two parameters item and price
 function Inventory(item, price) {
