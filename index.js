@@ -772,7 +772,7 @@ console.log("Hello");
 //   };
 // }
 //hellp
-
+//hellp
 //Two parameters item and price
 function Inventory(item, price) {
   // add code here
