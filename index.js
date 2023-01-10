@@ -771,16 +771,36 @@ console.log("Hello");
 //     //If NOT, return the string 'Item is not in inventory.'
 //   };
 // }
-//hellp
-//hellp
-//hellp
-//hellp
-//hellp
-//hellp
-//hellp
-//hellp
-//hellp
-//hellp
+
+// Challenge 16
+function goodKeys(obj, callback) {
+  //create a newArray variable
+  const newArray = [];
+  //for in loop
+  for (const value in obj) {
+    //pass each value into the callback parameter
+    if (callback(obj[value])) {
+      //if the callback return value is true then push them to newArray
+      newArray.push(value);
+    }
+  }
+  //return newArray
+  return newArray;
+}
+
+// /*** Uncomment these to check your work! ***/
+const sunny = {
+  mac: "priest",
+  dennis: "calculating",
+  charlie: "birdlaw",
+  dee: "bird",
+  frank: "warthog",
+};
+const startsWithBird = function (str) {
+  return str.slice(0, 4).toLowerCase() === "bird";
+};
+console.log(goodKeys(sunny, startsWithBird)); // should log: ['charlie', 'dee']
+
 //Two parameters item and price
 function Inventory(item, price) {
   // add code here
