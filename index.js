@@ -772,52 +772,75 @@ console.log("Hello");
 //   };
 // }
 
-// Challenge 16
-function goodKeys(obj, callback) {
-  //create a newArray variable
-  const newArray = [];
+// Challenge 18
+function objFilter(obj, callback) {
+  //create a newobj
+  const newObj = {};
   //for in loop
-  for (const value in obj) {
-    //pass each value into the callback parameter
-    if (callback(obj[value])) {
-      //if the callback return value is true then push them to newArray
-      newArray.push(value);
+  for (const keys in obj) {
+    //pass keys into callback parameter
+    if (callback(keys) === obj[keys]) {
+      //conditional: if output from the callback is equal to the corresponding value = key/value pair on newObj
+      newObj[keys] = obj[keys];
     }
   }
-  //return newArray
-  return newArray;
+  return newObj;
 }
 
 // /*** Uncomment these to check your work! ***/
-const sunny = {
-  mac: "priest",
-  dennis: "calculating",
-  charlie: "birdlaw",
-  dee: "bird",
-  frank: "warthog",
-};
-const startsWithBird = function (str) {
-  return str.slice(0, 4).toLowerCase() === "bird";
-};
-console.log(goodKeys(sunny, startsWithBird)); // should log: ['charlie', 'dee']
+const startingObj = {};
+startingObj[6] = 3;
+startingObj[2] = 1;
+startingObj[12] = 4;
+const half = (n) => n / 2;
+console.log(objFilter(startingObj, half)); // should log: { 2: 1, 6: 3 }
 
-//Two parameters item and price
-function Inventory(item, price) {
-  // add code here
-  //declare a variable set equal to new keyword with an invoked functin trackInventory()
-  const trackInventory = new InventoryMethods();
-  //use the THIS keyword to set passed-in parameter item to equal a new object with two properties price and quantity which 	will be intiatially evaluated to 0
-  trackInventory.item = {
-    price: price,
-    quantity: 1,
-  };
-  return trackInventory;
-}
+// // Challenge 16
+// function goodKeys(obj, callback) {
+//   //create a newArray variable
+//   const newArray = [];
+//   //for in loop
+//   for (const value in obj) {
+//     //pass each value into the callback parameter
+//     if (callback(obj[value])) {
+//       //if the callback return value is true then push them to newArray
+//       newArray.push(value);
+//     }
+//   }
+//   //return newArray
+//   return newArray;
+// }
 
-// console.log(Inventory("cucumber", 2));
+// // /*** Uncomment these to check your work! ***/
+// const sunny = {
+//   mac: "priest",
+//   dennis: "calculating",
+//   charlie: "birdlaw",
+//   dee: "bird",
+//   frank: "warthog",
+// };
+// const startsWithBird = function (str) {
+//   return str.slice(0, 4).toLowerCase() === "bird";
+// };
+// console.log(goodKeys(sunny, startsWithBird)); // should log: ['charlie', 'dee']
 
-const myInventory = new Inventory("cucumber", 2);
-console.log(myInventory);
+// //Two parameters item and price
+// function Inventory(item, price) {
+//   // add code here
+//   //declare a variable set equal to new keyword with an invoked functin trackInventory()
+//   const trackInventory = new InventoryMethods();
+//   //use the THIS keyword to set passed-in parameter item to equal a new object with two properties price and quantity which 	will be intiatially evaluated to 0
+//   trackInventory.item = {
+//     price: price,
+//     quantity: 1,
+//   };
+//   return trackInventory;
+// }
+
+// // console.log(Inventory("cucumber", 2));
+
+// const myInventory = new Inventory("cucumber", 2);
+// console.log(myInventory);
 // // Uncomment these lines to check your work!
 // myInventory.addItem('carrot', 1);
 // console.log(myInventory.checkItem('cucumber')); // Logs: { price: 2, quantity: 1 }
